@@ -1,0 +1,454 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 560px;
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfont/iconfont.eot");
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff2") format("woff2"), url("../iconfont/iconfont.woff") format("woff"), url("../iconfont/iconfont.ttf") format("truetype"), url("../iconfont/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 14px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*logo*/
+h1 {
+  cursor: pointer;
+  width: 140px;
+  height: 50px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  background: no-repeat;
+  background-size: 50px 35px;
+  z-index: 2;
+  font-size: 40px;
+}
+h1 p{
+  font-size: 34px;
+  margin-top: 8px;
+  float: right;
+}
+
+h1 img{
+    width: 50px;
+    height: 50px;
+}
+
+/*轮播模块*/
+.lunbo .side {
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 480px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: all 1s;
+}
+
+/*顶部模块*/
+.top {
+  position: relative;
+  z-index: 99;
+}
+
+.top ul {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+}
+
+.top ul li {
+  float: left;
+  list-style: none;
+  margin: 5px 18px;
+  cursor: pointer;
+}
+
+.top ul li:hover div {
+  color: #000000;
+}
+
+.top ul li div {
+  color: #919191;
+  font-size: 16px;
+  padding:0 10px 0 24px;
+  text-align: center;
+}
+
+.top ul li:nth-last-of-type(2) {
+  position: relative;
+}
+
+.top ul li:nth-last-of-type(2):hover ul {
+  display: block;
+}
+.top ul li:nth-last-of-type(2):hover span {
+  border-color: transparent transparent #919191 transparent;
+  top: 4px;
+}
+.top ul li:nth-last-of-type(2) div {
+  position: relative;
+}
+.top ul li:nth-last-of-type(2) div span {
+  position: absolute;
+  border: 6px solid;
+  border-color: #cecdcd transparent transparent transparent;
+  top: 11px;
+  right: -12px;
+}
+.top ul li:nth-last-of-type(2) ul {
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 26px;
+  left: 10px;
+  display: none;
+}
+
+.top ul li:nth-last-of-type(2) ul li {
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+  float: none;
+  font-size: 14px;
+  color: #919191;
+}
+
+.top .vip{
+  margin: -10px 0;
+  position: relative;
+}
+.vip img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+}
+
+.vip div{
+    z-index: 2;
+    margin-top: 15px;
+    margin-left: 18px;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    color: white !important;
+    background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+    border-radius: 6px;
+}
+/*标题模块*/
+.title {
+  height: 138px;
+}
+
+.title h2 {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.title h3 {
+  font-size: 26px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.title h3 span {
+  float: right;
+  color: #359eff;
+  cursor: pointer;
+}
+.title h3 span:hover{
+  color: #2b72ff;
+}
+/*输入框*/
+
+.main-wraper {
+  margin-left: 480px;
+  position: relative;
+  height: 100%;
+}
+
+.main {
+  position: absolute;
+  padding-bottom: 10px;
+  top: 100px;
+  width: 100%;
+}
+
+.form {
+  position: relative;
+  margin: 0 auto;
+  width: 480px;
+}
+
+.form div {
+  margin-top: 20px;
+}
+
+.form div input {
+  box-sizing: border-box;
+  width: 480px;
+  height: 52px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
+}
+
+/*整体提示符号定位*/
+.username {
+  position: relative;
+}
+
+.username .dui {
+  position: absolute;
+  left: 450px;
+  top: 14px;
+}
+
+.userpaw {
+  position: relative;
+}
+
+.userpaw .dui1 {
+  position: absolute;
+  left: 450px;
+  top: 14px;
+}
+
+.userphone {
+  position: relative;
+}
+
+.userphone .dui2 {
+  position: absolute;
+  left: 450px;
+  top: 14px;
+}
+
+.yzm {
+  position: relative;
+}
+
+.yzm .sjm {
+  position: absolute;
+  left: 290px;
+  top: 14px;
+}
+
+.nr1,
+.nr2,
+.nr3 {
+  color: #a5caff;
+}
+
+/*手机号模块*/
+#sele {
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  width: 154px;
+  height: 52px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.userphone > input {
+  width: 300px !important;
+}
+
+/*验证码模块*/
+.yzm input:nth-of-type(1) {
+  width: 330px;
+  margin-right: 20px;
+}
+
+.yzm .yzmnum {
+  padding-left: 35px !important;
+  box-sizing: border-box;
+  width: 124px;
+  height: 52px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.yzm i {
+  cursor: pointer;
+  color: purple;
+  text-decoration: underline;
+  font-style: normal;
+  display: block;
+  position: relative;
+  width: 120px;
+  margin-left: 370px;
+  margin-top: 5px;
+}
+
+/*注册模块*/
+.register button {
+  background: #3386ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.register:hover button {
+  background: #2d7aeb;
+}
+
+.form div button {
+  box-sizing: border-box;
+  width: 480px;
+  height: 60px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 24px;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
+}
+
+/*协议模块*/
+.agree a {
+  text-decoration: none;
+  color: #999999;
+}
+
+.success{
+  position: relative;
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.success-text {
+  position: absolute;
+  left: 50%;
+  top: 210px;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.number {
+  font-size: 38px;
+  white-space: nowrap;
+  left: 50%;
+  top: 270px;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.success-icon{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  color: lawngreen;
+}
+
+.tips{
+  position: absolute;
+  color: red;
+  white-space: nowrap;
+  left: 50%;
+  top: 340px;
+  transform: translateX(-50%);
+}
+
+.find-account{
+  position: absolute;
+  left: 50%;
+  top: 150px !important;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  width: 500px;
+  height: 200px;
+}
+
+.find-account div{
+  font-size: 60px;
+  padding: 0 0 30px 0;
+}
+
+.find-account h2{
+  font-size: 30px;
+  padding: 0 0 30px 0;
+}
+
+.find-account input{
+  box-sizing: border-box;
+  width: 380px;
+  height: 52px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
+}
+
+.find-account input:focus{
+  border: 1px solid #2b72ff;
+}
+
+.find-account button{
+  float: right;
+  height: 52px;
+  width: 90px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  background-color: #3386ff;
+  border: 1px solid #2b72ff;
+}
+
+.find-account button:hover{
+  background-color: #2b72ff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .lunbo .side{
+    width: 240px;
+  }
+  .main-wraper{
+    transition-delay: 0.2s;
+    margin-left: 240px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lunbo {
+   display: none;
+  }
+  .main-wraper{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .vip {
+   display: none;
+  }
+}

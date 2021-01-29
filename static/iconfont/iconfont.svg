@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="tishi" unicode="&#58936;" d="M472.615385 630.626462h78.76923v-333.942154h-78.76923zM472.615385 232.290462h78.76923v-94.916924h-78.76923zM512 807.345231C278.567385 807.345231 88.694154 617.432615 88.694154 384c0-233.393231 189.873231-423.345231 423.305846-423.345231S935.305846 150.606769 935.305846 384c0 233.432615-189.873231 423.345231-423.305846 423.345231z m0-767.881846c-189.952 0-344.536615 154.624-344.536615 344.576S322.048 728.576 512 728.576 856.536615 573.991385 856.536615 384c0-189.912615-154.584615-344.536615-344.536615-344.536615z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
